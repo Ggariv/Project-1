@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./mealstats.css">
+    <title>Project Name</title>
+</head>
+
+<body>
+    <!-- Header section-->
+    <header></header>
+
+    <main>
+        <div class="grid grid-cols-2 max-w">
+            <div class="border p-4 grid-cols-1">
+                <strong>NAME:</strong> 
+                <span id="meal-title"></span>
+                <img class="border p-4" id="meal-select">
+            </div>
+            <div class="border p-4 grid-cols-1">
+                <strong>INGREDIENTS:</strong>
+                <div class = "grid grid-cols-4" id="meal-ingredient"></div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 max-w">
+           <div class="border p-4 grid-cols-1">
+            <h3><strong>DESCRIPTION</strong></h3>
+                <div class="border p-4">
+                    <h4><strong>Nationality:</strong></h4>
+                    <p id="meal-description1"></p>
+                </div>
+                <div class="border p-4">
+                    <h4><strong>Category:</strong></h4>
+                    <p id="meal-description2"></p>
+                </div>
+            </div>
+            
+            <div class="border p-4 grid-cols-1">
+                <strong>INSTRUCTIONS:</strong>
+                <p id="meal-instruction"></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer section-->
+    <footer></footer>
+    <script src="./mealstats.js"></script>
+</body>
+</html>
