@@ -146,6 +146,11 @@ function getMealData(mealID) {
   var queryString = document.location.search;
   var mealID = queryString.split('=')[1];
   var requestUrl = "https://www.themealdb.com/api/json/v2/9973533/lookup.php?i=" + mealID ;
+  // ingredient image segment - start
+  var urlVariables = window.location.search;
+  var filter = urlVariables.split("&");
+  filter = filter[0];
+  // ingredient image segment - end
   fetch(requestUrl)
     .then(function (response) {
       return response.json();
@@ -154,13 +159,25 @@ function getMealData(mealID) {
       console.log(data)
       mealTitle.textContent = data.meals[0].strMeal;
       mealSelected.src = data.meals[0].strMealThumb;
-      mealDescription1.textContent = data.meals[0].strArea;
-      mealDescription2.textContent = data.meals[0].strCategory;
+      //mealDescription1.textContent = data.meals[0].strArea;
+      //mealDescription2.textContent = data.meals[0].strCategory;
       mealInstruction.textContent = data.meals[0].strInstructions;
       for (var i = 1; i <= 20; i++) {
+        if (data.meals[0]["strIngredient" + i]) {
+          console.log(ingredientImagebox.length);
+          ingredientImagebox[i-1].src = "https://www.themealdb.com/images/ingredients/" + data.meals[0]["strIngredient" + i] + ".png";
+          }
         mealIngredientbox[i-1].textContent = data.meals[0]['strIngredient' + i]
         mealMeasurebox[i-1].textContent = data.meals[0]['strMeasure' + i]
         }
-      });
+      })
+      //ingredientImagebox.src=data.meals[0].strMealThumb;
+      //for (var i = 1; i <= 20; i++) {
+        
+        //ingredientImagebox.src = "https://www.themealdb.com/images/ingredients/" + data.meals[i].strIngredient + ".png";
+        //}
   }
+
+// Function
+
 
