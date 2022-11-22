@@ -1,58 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./style.css">
-    <title>Food Project</title>
+    <title>The Food Tracker</title>
 </head>
-
-<body>
+<body >
     <!-- Header section-->
-    <header>
+    <header class="w-auto header">
+        <nav class="flex items-center justify-between flex-wrap p-3">
+            <div class="flex items-center text-white mr-6">
+                <span class="font-semibold text-xl tracking-tight">The Food Tracker</span>
+            </div>
+            <div class="text-sm lg:flex">
+                <a href="./index.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Home</a>
+                <a href="./about-us.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">About Us</a>
+            </div>
+        </nav>
     </header>
-
-    <!-- Title Section -->
-    <h1 class="text-5xl font-bold text-center">About Us</h1>
-    <br>
-
-    <!-- Main Section-->
-    <main>
-        <div class="grid grid-cols-5 justify-items-auto p-5 max-w text-center">
+    
+    <main class="container mx-auto main ">
+        <!-- Title Section -->
+        <h1 class="text-5xl font-bold text-center">About Us</h1>
+        <br><br><br>
+        <section class="grid grid-cols-5 justify-items-auto p-5 max-w text-center box-container">
             <div>
-                <img class="random-meal-box0 border" height="400" width="90%"></img>
+                <a href="#" class="random-meal-link0">
+                    <img class="random-meal-box0 border" height="400" width="90%"></img>
+                </a>
                 <p class="random-name-box0 text-1xl"></p>
             </div>
-            
-            <div>
-                <img class="random-meal-box1 border" height="400" width="90%"></img>
+              
+              <div>
+                <a href="#" class="random-meal-link1">
+                    <img class="random-meal-box1 border" height="400" width="90%"></img>
+                </a>
                 <p class="random-name-box1 text-1xl"></p>
-            </div>
-            
-            <div>    
-                <p class="tracking-tight text-center">We are a search platform that aims to create a new food-tasting experience by providing a varied list of dishes from all over the world based on criterias such as ingredients and country of origin. 
-                    If you're looking to try something new, you can search for a meal either randomly or by specific criterias and each result will give you the ingredient list, instructions, nutrition content and taste quality.
-                </p>
-            </div>
-            
-            <div>
-                <img class="random-meal-box2 border" height="400" width="90%"></img>
-                <p class="random-name-box2 text-1xl"></p>
-            </div>
-            
-            <div>
-                <img class="random-meal-box3 border" height="400" width="90%"></img>
-                <p class="random-name-box3 text-1xl"></p>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer section-->
-    <footer></footer>
-    <script src="./aboutus.js"></script>
-
-
+              </div>
+              
+              <div>    
+                  <p class="tracking-tight text-center">We are a search platform that aims to create a new food-tasting experience by providing a varied list of dishes from all over the world based on criterias such as ingredients and country of origin. 
+                    If you're looking to try something new, you can search for a meal either randomly or by specific criterias and each result will give the ingredient list and instructions.
+                  </p>
+              </div>
+              
+              <div>
+                  <a href="#" class="random-meal-link2">
+                      <img class="random-meal-box2 border" height="400" width="90%"></img>
+                  </a>
+                  <p class="random-name-box2 text-1xl"></p>
+              </div>
+              
+              <div>
+                  <a href="#" class="random-meal-link3">
+                      <img class="random-meal-box3 border" height="400" width="90%"></img>
+                  </a>
+                  <p class="random-name-box3 text-1xl"></p>
+              </div>
+          </section>
+      </main>
+      <br><br><br><br><br><br><br><br><br>
+    
+      <!-- Footer section-->
+      <footer class="w-auto header">
+          <span class="text-sm text-white">
+              © 2022 <a href="https://intelswift.com/" class="hover:underline">IntelSwift</a>. All Rights Reserved.
+          </span>
+      </footer>
+      <script src="./assets/js/aboutus.js"></script>
 </body>
 </html>

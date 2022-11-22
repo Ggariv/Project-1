@@ -13,7 +13,7 @@ Access our food-search platform through the [following link]()
 
   When you search for a new meal, we not only provide you its name and place of procedence.
 
-  We also provide the required ingredients for its preparation, the cooking instructions, its nutritional content and how does it taste: whether is salty, sweet, sour, etc.
+  We also provide the required ingredients for its preparation and the cooking instructions.
 
 ## The Creation Process
 
@@ -21,28 +21,39 @@ For the ellaboration of Project-Name, the following technologies were employed:
 
 * Local files
 
+  See attached files (html, css & js)
+
+* CSS Framework -> Tailwind
+
+  Tailwind is a unique CSS framework when it comes to styling web applications, meaning that Tailwind does not have a default theme that you have to use like other CSS frameworks.
+  With Tailwind’s pre-built classes, you can design the layout directly in an HTML file. This makes it a very responsive, mobile-friendly CSS framework. 
   
-
-* CSS Framework
-
+  ![Tailwind](./Images/tailwind.png)
   
 
 * Web APIs
 
+  Main website: https://www.themealdb.com/
+
+  https://www.themealdb.com/api/json/v1/1/filter.php?
+
+  http://themealdb.com/api/json/v1/1/search.php?
+
+  https://www.themealdb.com//api/json/v2/9973533/lookup.php?i=
   
 
 ...
 
 The following image demonstrates the application functionality:
 
-![Food-search platform](./)
+![Food-search platform](./Images/project%20screenshot.png)
 - - -
 
 ## User Story
 
 ```
 AS A food enthusiast
-I WANT to see try new dishes from different places based on its ingredientes, nutrition value, preparation process and taste.
+I WANT to see try new dishes from different places based on its ingredients and cooking process.
 SO THAT I cook them more frequently
 ```
 
@@ -60,7 +71,7 @@ WHEN I look for a new dish
 THEN I am randomly presented to a new variety of dishes from different places.
 OVERALL
 WHEN I look for a new dish based on these criteria
-THEN I am getting not only the name of the dish, also the required ingredients, how to prepare it, its nutritional value and its taste.
+THEN I am getting not only the name of the dish, also the required ingredients and how to prepare it.
 
 - - -
 © 2022 IntelSwift llc. brand. Confidential and Proprietary. All Rights Reserved.
