@@ -1,28 +1,676 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <title>The Meals DB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header class="flex-container header">Weather Application</header>
-    <main class="container main"> 
-      Random Meals
-      <section class="row box-container">
-        <img class="col-lg-3 random-meal-box0" height="200" width="2000px"></img>
-        <img class="col-lg-3 random-meal-box1" height="200" width="20000px"></img>
-        <img class="col-lg-3 random-meal-box2" height="200" width="200"></img>
-        <img class="col-lg-3 random-meal-box3" height="200" width="200"></img>
+  <body >
+    <!-- Header and NavBar Goes Here-->
+    <header class="w-auto header">Header</header>
+    
+    <main class="container mx-auto main ">
+
+      <!---Gonzalo Popular Meals-->
+      Popular Meals
+      <section class="container box-container">
+      <div class="p-5 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
+        <div class="group relative">
+          <div class="  rounded-md  group-hover:opacity-75  lg:h-65">
+            <img  class="poularMeal-img0 ">
+          </div>
+          <div class="mt-4 flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#" class="popularMeal-link0">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtpopularMeal-0 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="  rounded-md  group-hover:opacity-75  lg:h-65">
+            <img  class="poularMeal-img1">
+          </div>
+          <div class="mt-4 flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#" class="popularMeal-link1">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtpopularMeal-1 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="  rounded-md  group-hover:opacity-75  lg:h-65">
+            <img  class="poularMeal-img2">
+          </div>
+          <div class="mt-4 flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#" class="popularMeal-link2">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtpopularMeal-2 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="  rounded-md  group-hover:opacity-75  lg:h-65">
+            <img  class="poularMeal-img3">
+          </div>
+          <div class="mt-4 flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#" class="popularMeal-link3">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtpopularMeal-3 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="  rounded-md  group-hover:opacity-75 lg:h-65">
+            <img  class="poularMeal-img4">
+          </div>
+          <div class="mt-4 flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="#" class="popularMeal-link4">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtpopularMeal-4 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </section>
+
+
+          <!-- Popular Ingredients-->
+          Popular Ingredients
+          <section class="container box-container">
+          <div class="p-2 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
+            <div class="group relative">
+              <div class="  rounded-md  group-hover:opacity-75  lg:h-65">
+                <img   class="randomIng-img0 ">
+              </div>
+              <div class="mt-4 flex justify-center">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#" class="ingredient-link0">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                    </a>
+                  </h3>
+                  <p class="TxtandomIng-0 mt-1 text-gray-700 text-sm"></p>
+                </div>
+              </div>
+            </div>
+     
+            <div class="group relative">
+              <div class="  rounded-md  group-hover:opacity-75  lg:h-65">
+                <img  class="randomIng-img1">
+              </div>
+              <div class="mt-4 flex justify-center">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#" class="ingredient-link1">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                    </a>
+                  </h3>
+                  <p class="TxtandomIng-1 mt-1 text-gray-700 text-sm"></p>
+                </div>
+              </div>
+            </div>
+     
+            <div class="group relative">
+              <div class="  rounded-md  group-hover:opacity-75  lg:h-65">
+                <img class="randomIng-img2">
+              </div>
+              <div class="mt-4 flex justify-center">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#" class="ingredient-link2">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                    </a>
+                  </h3>
+                  <p class="TxtandomIng-2 mt-1 text-gray-700 text-sm"></p>
+                </div>
+              </div>
+            </div>
+     
+            <div class="group relative">
+              <div class="  rounded-md  group-hover:opacity-75  lg:h-65">
+                <img  class="randomIng-img3">
+              </div>
+              <div class="mt-4 flex justify-center">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#" class="ingredient-link3">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                    </a>
+                  </h3>
+                  <p class="TxtandomIng-3 mt-1 text-gray-700 text-sm"></p>
+                </div>
+              </div>
+            </div>
+     
+            <div class="group relative">
+              <div class="  rounded-md  group-hover:opacity-75  lg:h-65">
+                <img  class="randomIng-img4">
+              </div>
+              <div class="mt-4 flex justify-center">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#" class="ingredient-link4">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                    </a>
+                  </h3>
+                  <p class="TxtandomIng-4 mt-1 text-gray-700 text-sm"></p>
+                </div>
+              </div>
+            </div>
+     </div>
+          </div>
+          </section>
+  
+<!-- Displaying 5 Random Meals-->
+    
+          Random Meals
+          <section class="container box-container">
+          <div class="p-5 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
+            <div class="group relative">
+              <div class="  rounded-md  group-hover:opacity-75  lg:h-65">
+                <img  class="randomMeal-img20 ">
+              </div>
+              <div class="mt-4 flex justify-center">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                    </a>
+                  </h3>
+                  <p class="TxtRandomMeal-20 mt-1 text-gray-700 text-sm"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group relative">
+              <div class="  rounded-md  group-hover:opacity-75  lg:h-65">
+                <img  class="randomMeal-img21">
+              </div>
+              <div class="mt-4 flex justify-center">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                    </a>
+                  </h3>
+                  <p class="TxtRandomMeal-21 mt-1 text-gray-700 text-sm"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group relative">
+              <div class="  rounded-md  group-hover:opacity-75  lg:h-65">
+                <img  class="randomMeal-img22">
+              </div>
+              <div class="mt-4 flex justify-center">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                    </a>
+                  </h3>
+                  <p class="TxtRandomMeal-22 mt-1 text-gray-700 text-sm"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group relative">
+              <div class="  rounded-md  group-hover:opacity-75  lg:h-65">
+                <img  class="randomMeal-img23">
+              </div>
+              <div class="mt-4 flex justify-center">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                    </a>
+                  </h3>
+                  <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="group relative">
+              <div class="  rounded-md  group-hover:opacity-75 lg:h-65">
+                <img  class="randomMeal-img24">
+              </div>
+              <div class="mt-4 flex justify-center">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                    </a>
+                  </h3>
+                  <p class="TxtRandomMeal-24 mt-1 text-gray-700 text-sm"></p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
       </section>
 
+
+      <!--Flags-->
+      Browse Countries
+      <section class="container mb-10 box-container">
+      <div class="p-5 grid grid-cols-5 gap-y-1 gap-x-6 md:grid-cols-8 lg:grid-cols-12 xl:gap-x-8">
+        <div class="group relative">
+          <div class="  rounded-md  group-hover:opacity-75">
+            <img  src="https://www.themealdb.com/images/icons/flags/big/64/gb.png" class="randomMeal-img20 ">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=British">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-20 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="  rounded-md  group-hover:opacity-75">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/us.png" class="randomMeal-img21">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=American">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-21 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="  rounded-md  group-hover:opacity-75 ">
+            <img  src="https://www.themealdb.com/images/icons/flags/big/64/fr.png" class="randomMeal-img22">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=French">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-22 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="  rounded-md  group-hover:opacity-75">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/ca.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Canadian">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="  rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/cn.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Chinese">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="  rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/nl.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Dutch">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="  rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/eg.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Egyptian">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/gr.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Greek">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/in.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Indian">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/ie.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Irish">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/it.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Italian">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/jp.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Japanese">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/kn.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Kenyan">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/tr.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Turkish">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/dz.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Algerian">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/tn.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Tunisian">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/pl.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Polish">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/my.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Malaysian">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/es.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Spanish">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/ar.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Argentinian">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/pt.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Portuguese">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/no.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Norwegian">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 ">
+            <img src="https://www.themealdb.com/images/icons/flags/big/64/ma.png"  class="randomMeal-img23">
+          </div>
+          <div class="flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Moroccan">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-23 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative">
+          <div class="rounded-md  group-hover:opacity-75 lg:h-65">
+            <img  src="https://www.themealdb.com/images/icons/flags/big/64/vn.png" class="randomMeal-img24">
+          </div>
+          <div class="mt-4 flex justify-center">
+            <div>
+              <h3 class="text-sm text-gray-700">
+                <a href="search.html?filter=country&a=Vietnamese">
+                  <span aria-hidden="true" class="absolute inset-0"></span>
+                </a>
+              </h3>
+              <p class="TxtRandomMeal-24 mt-1 text-gray-700 text-sm"></p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </section>
     </main>
+    <!--Footer Goes Here-->
+    <footer class="w-auto header">Footer</footer>
     <script src="./assets/js/script.js"></script>
+  </div>
   </body>
 </html>
