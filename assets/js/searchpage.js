@@ -61,7 +61,7 @@ function displayItems(data, i) {
   h3.classList.add = ("text-sm", "text-gray-700");
   span.classList.add = ("absolute", "inset-0");
   paragraph.classList.add = ("TxtRandomMeal-20", "mt-1", "text-gray-700", "text-sm");
-  ahref.href = "https://www.themealdb.com//api/json/v2/9973533/lookup.php?i=" + data.meals[i].idMeal;
+  ahref.href = "mealstats.html?i=" + data.meals[i].idMeal;
   // link to food stats
 
 
