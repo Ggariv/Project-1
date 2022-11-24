@@ -60,7 +60,7 @@ function displayItems(data, i) {
   paragraph.classList.add =
     ("TxtRandomMeal-20", "mt-1", "text-gray-700", "text-sm");
   ahref.href =
-    "https://www.themealdb.com//api/json/v2/9973533/lookup.php?i=" +
+    "meals.html?i=" +
     data.meals[i].idMeal;
 
   boxContainer.appendChild(div1);
