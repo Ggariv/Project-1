@@ -9,14 +9,16 @@
 </head>
 <body >
     <!-- Header section-->
-    <header class="w-auto header">
+    <header class = bg-neutral-600>
         <nav class="flex items-center justify-between flex-wrap p-3">
-            <div class="flex items-center text-white mr-6">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
                 <span class="font-semibold text-xl tracking-tight">The Food Tracker</span>
             </div>
-            <div class="text-sm lg:flex">
-                <a href="./index.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Home</a>
-                <a href="./about-us.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">About Us</a>
+            <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+                <div class="text-xl lg:flex-grow">
+                    <a href="./index.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">Home</a>
+                    <a href="./about-us.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">About Us</a>
+                </div>
             </div>
         </nav>
     </header>
@@ -24,51 +26,74 @@
     <main class="container mx-auto main ">
         <!-- Title Section -->
         <h1 class="text-5xl font-bold text-center">About Us</h1>
-        <br><br><br>
-        <section class="grid grid-cols-5 justify-items-auto p-5 max-w text-center box-container">
-            <div>
-                <a href="#" class="random-meal-link0">
-                    <img class="random-meal-box0 border" height="400" width="90%"></img>
-                </a>
-                <p class="random-name-box0 text-1xl"></p>
+        <br>
+
+        <section class="container box-container">
+            <div class="p-5 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-5 xl:gap-x-8">
+                <div class="group relative">
+                    <a href="#" class="random-meal-link0">
+                        <div class="rounded-md  group-hover:opacity-75  lg:h-65">
+                            <img class="random-meal-box0 border" height="400" width="90%"></img>
+                        </div>
+                        <div class="mt-4 flex justify-center">
+                            <h3 class="random-name-box0 text-sm text-gray-700"></h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="group relative">
+                    <a href="#" class="random-meal-link1">
+                        <div class="rounded-md  group-hover:opacity-75  lg:h-65">
+                            <img class="random-meal-box1 border" height="400" width="90%"></img>
+                        </div>
+                        <div class="mt-4 flex justify-center">
+                            <h3 class="random-name-box1 text-sm text-gray-700"></h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="group relative">
+                    <h3><strong>Who are we?</strong></h3>
+                    <div class="mt-4 flex justify-center">
+                        <p class="TxtRandomMeal-23 mt-1 text-sm">
+                        We are a search platform that aims to create a new food-tasting experience by providing a varied list of dishes from all over the world based on criterias such as ingredients and country of origin. 
+                        If you're looking to try something new, you can search for a meal either randomly or by specific criterias and each result will give the ingredient list and instructions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="group relative">
+                    <a href="#" class="random-meal-link2">
+                        <div class="rounded-md  group-hover:opacity-75  lg:h-65">
+                            <img class="random-meal-box2 border" height="400" width="90%"></img>
+                        </div>
+                        <div class="mt-4 flex justify-center">
+                            <h3 class="random-name-box2 text-sm text-gray-700"></h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="group relative">
+                    <a href="#" class="random-meal-link3">
+                        <div class="rounded-md  group-hover:opacity-75  lg:h-65">
+                            <img class="random-meal-box3 border" height="400" width="90%"></img>
+                        </div>
+                        <div class="mt-4 flex justify-center">
+                            <h3 class="random-name-box3 text-sm text-gray-700"></h3>
+                        </div>
+                    </a>
+                </div>
             </div>
-              
-              <div>
-                <a href="#" class="random-meal-link1">
-                    <img class="random-meal-box1 border" height="400" width="90%"></img>
-                </a>
-                <p class="random-name-box1 text-1xl"></p>
-              </div>
-              
-              <div>    
-                  <p class="tracking-tight text-center">We are a search platform that aims to create a new food-tasting experience by providing a varied list of dishes from all over the world based on criterias such as ingredients and country of origin. 
-                    If you're looking to try something new, you can search for a meal either randomly or by specific criterias and each result will give the ingredient list and instructions.
-                  </p>
-              </div>
-              
-              <div>
-                  <a href="#" class="random-meal-link2">
-                      <img class="random-meal-box2 border" height="400" width="90%"></img>
-                  </a>
-                  <p class="random-name-box2 text-1xl"></p>
-              </div>
-              
-              <div>
-                  <a href="#" class="random-meal-link3">
-                      <img class="random-meal-box3 border" height="400" width="90%"></img>
-                  </a>
-                  <p class="random-name-box3 text-1xl"></p>
-              </div>
-          </section>
+        </section>
       </main>
       <br><br><br><br><br><br><br><br><br>
     
-      <!-- Footer section-->
-      <footer class="w-auto header">
-          <span class="text-sm text-white">
-              © 2022 <a href="https://intelswift.com/" class="hover:underline">IntelSwift</a>. All Rights Reserved.
-          </span>
-      </footer>
-      <script src="./assets/js/aboutus.js"></script>
+    <!-- Footer section-->
+    <footer class="bg-neutral-600 text-center">
+        <span class="text-m text-white">
+            © 2022 <a href="https://intelswift.com/" class="hover:underline">IntelSwift</a>. All Rights Reserved.
+        </span>
+    </footer>
+    <script src="./assets/js/aboutus.js"></script>
 </body>
 </html>
