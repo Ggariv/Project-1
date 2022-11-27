@@ -1,7 +1,7 @@
 # Project-Name
 
 This website offers allows an user to search for different types of recipes to cook and taste!
-Access our food-search platform through the [following link](https://ggariv.github.io/Project-1/index.html)
+Access our food-search platform through the [following link](https://ggariv.github.io/Project-1/)
 
 * Food-Search Platform
 
