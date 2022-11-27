@@ -9,9 +9,11 @@ filter = filter[0];
 filter = filter.split("=");
 filter = filter[1];
 
-console.log("Filter1", filter2);
 
-if (filter == "country") {
+
+if (filter == "meal") {
+  url = "https://www.themealdb.com/api/json/v1/1/search.php?" + filter2;
+} else if (filter == "country") {
   url = "https://www.themealdb.com/api/json/v1/1/filter.php?" + filter2;
 } else if ((filter = "ingredients")) {
   url = "https://www.themealdb.com/api/json/v1/1/filter.php?" + filter2;
