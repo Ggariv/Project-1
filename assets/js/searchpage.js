@@ -34,10 +34,13 @@ function getApi() {
       return response.json();
     })
     .then(function (data) {
-      console.log(`Data`, data);
+       if (data.meals != null) {
       for (var i = 0; i < data.meals.length; i++) {
         displayItems(data, i);
       }
+       } else{
+         boxContainer.textContent = "No results found";
+       }
     });
 }
 
