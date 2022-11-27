@@ -165,7 +165,7 @@ function getRandomIngredients() {
           ".png";
         randomIngTxt[i].textContent = data.meals[i].strIngredient;
         ingredientUrl[i].href =
-          "search.html?filter=ingredients&i=" + data.meals[i].strIngredient;
+          "Search.html?filter=ingredients&i=" + data.meals[i].strIngredient;
       }
     });
 }
