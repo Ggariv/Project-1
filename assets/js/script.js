@@ -176,16 +176,13 @@ searchBtn.addEventListener("click", function (event) {
   console.log(inputValue);
   if (inputValue) {
     if (document.getElementById("meal-name").checked) {
-      console.log(`Meal Selected`);
-      window.location.href = "Search_results.html?filter=meal&s=" + inputValue;
+      window.location.href = "search.html?filter=meal&s=" + inputValue;
     } else if (document.getElementById("ingredient").checked) {
-      console.log(`Ingredient Selected`);
       window.location.href =
-        "Search_results.html?filter=ingredient&i=" + inputValue;
+        "search.html?filter=ingredients&i=" + inputValue;
     } else if (document.getElementById("country").checked) {
-      console.log(`Country Selected`);
       window.location.href =
-        "Search_results.html?filter=country&a=" + inputValue;
+        "search.html?filter=country&a=" + inputValue;
     }
   }
 });
