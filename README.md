@@ -1,4 +1,4 @@
-# Project-Name
+# The Food Tracker
 
 This website offers allows an user to search for different types of recipes to cook and taste!
 Access our food-search platform through the [following link](https://ggariv.github.io/Project-1/)
