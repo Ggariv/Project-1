@@ -19,7 +19,7 @@ if (filter == "meal") {
   url = "https://www.themealdb.com/api/json/v1/1/filter.php?" + filter2;
   console.log(`Ingredients`);
 } else {
-  url = "http://themealdb.com/api/json/v1/1/search.php?" + filter2;
+  url = "https://themealdb.com/api/json/v1/1/search.php?" + filter2;
 }
 
 //HomePage: Calling Functions
