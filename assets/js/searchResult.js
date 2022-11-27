@@ -12,6 +12,7 @@ filter = filter[1];
 if (filter == "meal") {
   url = "https://www.themealdb.com/api/json/v1/1/search.php?" + filter2;
 } else if (filter == "country") {
+  console.log("Country");
   url = "http://www.themealdb.com/api/json/v1/1/filter.php?" + filter2;
 } else if ((filter = "ingredient")) {
   url = "https://www.themealdb.com/api/json/v1/1/filter.php?" + filter2;
